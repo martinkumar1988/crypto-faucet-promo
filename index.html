@@ -2,103 +2,71 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>🎁 New User Reward: Get 5 USDT Free</title>
+  <title>Deposit 10 USDT → Get 15 USDT!</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: linear-gradient(135deg, #0f0f0f 0%, #1b1b1b 100%);
+      background: #0f0f0f;
       font-family: 'Segoe UI', sans-serif;
       color: #fff;
       text-align: center;
-      padding: 20px;
-      margin: 0;
+      padding: 40px 20px;
     }
     .container {
       background: #1e1e1e;
-      padding: 30px 20px;
-      max-width: 440px;
-      margin: 60px auto;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0, 255, 128, 0.25);
-      animation: fadeIn 1s ease-out;
+      padding: 30px;
+      max-width: 420px;
+      margin: auto;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0, 255, 128, 0.3);
+      animation: fadeIn 1.2s ease-out;
     }
-    h2 {
-      font-size: 26px;
-      margin-bottom: 12px;
-      color: #00e676;
-    }
-    p {
-      font-size: 16px;
-      margin: 10px 0;
-      color: #ccc;
-    }
-    ul.benefits {
-      list-style: none;
-      padding: 0;
-      margin: 20px 0;
-      text-align: left;
-    }
-    ul.benefits li {
-      margin: 8px 0;
-      padding-left: 24px;
-      position: relative;
-      font-size: 15px;
-      color: #ddd;
-    }
-    ul.benefits li::before {
-      content: '✔';
-      position: absolute;
-      left: 0;
-      color: #00c853;
-    }
-    .crypto-icons {
-      margin: 20px 0;
-      font-size: 32px;
-      animation: bounce 1.5s infinite;
-      color: #00c853;
-    }
-    a.button {
+    h2 { font-size: 24px; margin-bottom: 15px; }
+    p { font-size: 16px; margin: 12px 0; color: #ccc; }
+    .btn {
       display: inline-block;
-      padding: 14px 32px;
+      padding: 14px 28px;
+      margin: 8px;
       background-color: #00c853;
-      color: #1e1e1e;
+      color: white;
       font-weight: bold;
       text-decoration: none;
-      border-radius: 10px;
+      border-radius: 8px;
       transition: background 0.3s ease;
-      box-shadow: 0 4px 12px rgba(0, 200, 83, 0.4);
     }
-    a.button:hover {
-      background-color: #00e676;
-    }
+    .btn:hover { background-color: #00e676; }
     @keyframes fadeIn {
-      from {opacity: 0; transform: translateY(20px);}  
-      to {opacity: 1; transform: translateY(0);}  
-    }
-    @keyframes bounce {
-      0%, 100% { transform: translateY(0); }
-      50% { transform: translateY(-8px); }
-    }
-    @media (max-width: 480px) {
-      .container { margin: 40px 10px; padding: 24px; }
-      h2 { font-size: 22px; }
-      ul.benefits li { font-size: 14px; }
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
     }
   </style>
+  <script>
+    function fakeConversion() {
+      if (!confirm('确定要提交“已充值”？请在联系客服确认后使用此功能。')) return;
+      var img = new Image();
+      img.src = 'https://popads.net/track/conversion?cid=8968628&value=10';
+      img.style.display = 'none';
+      document.body.appendChild(img);
+      alert('感谢提交，客服联系后会为您发放奖励。');
+    }
+  </script>
 </head>
 <body>
   <div class="container">
-    <h2>🎁 New User Reward</h2>
-    <p style="font-size:20px; margin-bottom:8px;">Claim <strong>5 USDT</strong> Free Now!</p>
-    <p>Instantly unlock blockchain games with no KYC and fast withdrawals.</p>
-    <ul class="benefits">
-      <li>No KYC Required</li>
-      <li>Instant Deposit & Withdrawal</li>
-      <li>24/7 Customer Support</li>
-      <li>Secure & Anonymous</li>
-    </ul>
-    <div class="crypto-icons">₿ Ξ Ⓜ 💵</div>
-    <a class="button" href="https://t.me/bnn20230323" target="_blank">👉 Click to Claim Your 5 USDT</a>
+    <h2>🎉 Deposit 10 USDT → Get 15 USDT!</h2>
+    <p>No tricks · Fast Withdrawal · 24/7 Support</p>
+
+    <a class="btn" href="https://t.me/bnn20230323" target="_blank">
+      📩 Contact Support
+    </a>
+
+    <a class="btn" href="javascript:;" onclick="fakeConversion()">
+      ✅ I Have Deposited
+    </a>
+
+    <a class="btn" href="https://9kbossau.com" target="_blank">
+      🚀 Play Now
+    </a>
   </div>
 </body>
 </html>
